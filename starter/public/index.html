@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="theme-color" content="#007aff" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#007aff" />
+		<meta name="apple-mobile-web-app-title" content="Kwick" />
+		<link rel="apple-touch-icon" href="/images/icons/Icon-144.png" />
+
+		<title>Kwick!</title>
+		<link rel="stylesheet" href="/css/framework7.bundle.min.css" />
+		<link rel="stylesheet" href="/css/kwick.css" />
+	</head>
+	<body>
+		<!-- App root element -->
+		<div id="app">
+			<!-- Statusbar overlay -->
+			<div class="statusbar"></div>
+
+			<!-- Your main view, should have "view-main" class -->
+			<div class="view view-main">
+				<!-- PAGE MENU -->
+				<div data-name="menu" class="page" id="menu-screen">
+					<!-- Top Navbar -->
+					<div class="navbar bg-color-primary">
+						<div class="navbar-inner">
+							<div class="title">KWICK!</div>
+						</div>
+					</div>
+
+					<div class="page-content">
+						<div class="list">
+							<ul>
+								<li class="item-content item-input">
+									<div class="item-inner">
+										<div class="item-title item-label">Identifiant</div>
+										<div class="item-input-wrap">
+											<input type="text" name="username" id="username" />
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="block">
+							<div class="row">
+								<a href="messages" class="link col button button-outline return-button">Retour</a>
+								<a href="#" id="bt_validate" class="col button button-fill">Valider</a>
+							</div>
+						</div>
+
+						<div class="block">
+							<p class="row">
+								<a href="#" id="bt_notification" class="col button button-round button-fill color-green">Autoriser les notifications</a>
+							</p>
+							<p class="row">
+								<a href="#" id="bt_install" class="col button button-round button-fill color-green">Installer</a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- PAGE MESSAGES -->
+				<div data-name="messages" class="page">
+					<!-- Top Navbar -->
+					<div class="navbar bg-color-primary">
+						<div class="navbar-inner">
+							<div class="title">KWICK!</div>
+							<div class="right">
+								<a href="/menu/" class="link icon-only">
+									<img src="./images/menu-24.svg" />
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="toolbar messagebar">
+						<div class="toolbar-inner">
+							<div class="messagebar-area">
+								<textarea id="input_message" class="resizable" placeholder="Message"></textarea>
+							</div>
+							<a id="bt_send" class="link" href="#"><img src="./images/send-24.svg"/></a>
+						</div>
+					</div>
+
+					<!-- Messages page -->
+					<div id="message_content" class="page-content messages-content" data-name="messages">
+						<div class="messages"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Path to Framework7 Library Bundle JS-->
+		<script type="text/javascript" src="/vendors/framework7.bundle.min.js"></script>
+
+		<!-- Path to your app js-->
+		<script type="module" src="/app/app.js"></script>
+	</body>
+</html>

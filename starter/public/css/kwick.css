@@ -1,0 +1,11 @@
+.title {
+	color: #fff;
+}
+.md-dark {
+	color: #fff !important;
+}
+
+.message-avatar {
+	background-image: url(./../images/icons/Icon-32.png);
+	opacity: 1 !important;
+}
