@@ -1,33 +1,31 @@
 
 
 const app = new Framework7({
-    // App root element
-    el: '#app',
-    // App Name
-    name: 'My App',
-    // Enable swipe panel
-    panel: {
-      swipe: true,
+  // App root element
+  el: '#app',
+  // App Name
+  name: 'My App',
+  // Enable swipe panel
+  panel: {
+    swipe: true,
+  },
+
+  routes: [
+    {
+      path: '/about',
+      url: 'about.html',
     },
-    // Add default routes
-    routes: [
-      {
-        path: '/about/',
-        url: 'about.html',
-      },
-      {
-        path: '/messages/',
-        url: '/messages/',
-        componentUrl: './pages/messages.html',
-      },
-      {
-        path: '/identification/',
-        url: '/identification/',
-        componentUrl: './pages/identification.html',
-      }
-    ],
-    // ... other parameters
-  });
+    {
+      path: '/messages',
+      url: './pages/messages.html',
+    },
+    {
+      path: '/identification',
+      url: './pages/identification.html',
+    }
+  ]
+
+});
 
   
 const mainView = app.views.create('.view-main');

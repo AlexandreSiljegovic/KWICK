@@ -1,6 +1,4 @@
-.navbar-inner {
-    background-color: blue;
-}
+
 
 .button-row {
     display: flex;
@@ -10,4 +8,8 @@
 
 .button-row button {
     margin: 0 10px;
+}
+
+.message-avatar {
+    background-image: url('https: //cdn.framework7.io/placeholder/people-100x100-9.jpg');
 }
