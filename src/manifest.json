@@ -1,0 +1,67 @@
+{
+    "name": "Kwick! Chattez presto!",
+    "short_name": "Kwick!",
+    "start-url": "./index.html",
+    "scope": ".",
+    "display": "standalone",
+    "theme_color": "#E01B49",
+    "background_color": "#ffffff",
+    "description": "Un chat comunautaire en PWA.",
+    "dir": "ltr",
+    "lang": "fr-FR",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "./img/icons/Icon-32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "./img/icons/Icon-48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "./img/icons/Icon-100.png",
+            "type": "image/png",
+            "sizes": "100x100"
+        },
+        {
+            "src": "./img/icons/Icon-144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "./img/icons/Icon-256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "./img/icons/Icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "protocole-handlers": [
+        {
+            "protocol": "web+jngl",
+            "url": "/lookup?type=%s"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "./img/screenshots/screenshot_wide1280x720.jpg",
+            "type": "image/jpg",
+            "sizes": "1280x720",
+            "form_factor": "wide",
+            "label": "Homescreen of Awesome App"
+        },
+        {
+            "src": "./img/screenshots/screenshot_narrow1280x720.jpg",
+            "type": "image/jpg",
+            "sizes": "1280x720",
+            "form_factor": "narrow",
+            "label": "Homescreen of Awesome App"
+        }
+    ]
+}
