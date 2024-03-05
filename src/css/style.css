@@ -10,6 +10,18 @@
     margin: 0 10px;
 }
 
-.message-avatar {
-    background-image: url('https: //cdn.framework7.io/placeholder/people-100x100-9.jpg');
+#alexleboss {
+    background-image: url('../img/light.jpg');
+}
+
+#lzakm {
+    background-image: url('../img/sasuke.jpg');
+}
+
+#user1 {
+    background-image: url('../img/pngwing.com.png');
+}
+
+#ronaldo {
+    background-image: url('../img/ronaldo.png');
 }
